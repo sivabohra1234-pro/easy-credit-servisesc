@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apply for Loan | Easy Credit Services</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Easy <span>Credit</span> Services
+    </div>
+
+    <a href="index.html" class="btn btn-outline">
+        Back to Home
+    </a>
+
+</header>
+
+
+<main class="application-container">
+
+    <div class="application-heading">
+
+        <div class="badge">
+            CUSTOMER APPLICATION
+        </div>
+
+        <h1>
+            Apply for Loan
+        </h1>
+
+        <p>
+            Please enter your details below. Our team will contact
+            you regarding your loan requirement.
+        </p>
+
+    </div>
+
+
+    <form id="loanForm" class="application-form">
+
+        <h2>Personal Information</h2>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Mobile Number</label>
+
+                <input
+                    type="tel"
+                    name="mobile"
+                    placeholder="10 digit mobile number"
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter email address"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>City</label>
+
+                <input
+                    type="text"
+                    name="city"
+                    placeholder="Enter city"
+                    required
+                >
+
+            </div>
+
+        </div>
+
+
+        <h2>Loan Requirement</h2>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>Loan Type</label>
+
+                <select name="loanType" required>
+
+                    <option value="">
+                        Select Loan Type
+                    </option>
+
+                    <option value="Personal Loan">
+                        Personal Loan
+                    </option>
+
+                    <option value="Business Loan">
+                        Business Loan
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Required Loan Amount</label>
+
+                <input
+                    type="number"
+                    name="amount"
+                    placeholder="Enter amount"
+                    min="1"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Employment Type</label>
+
+                <select name="employment">
+
+                    <option value="Salaried">
+                        Salaried
+                    </option>
+
+                    <option value="Self Employed">
+                        Self Employed
+                    </option>
+
+                    <option value="Business">
+                        Business
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Monthly Income</label>
+
+                <input
+                    type="number"
+                    name="income"
+                    placeholder="Enter monthly income"
+                    min="0"
+                >
+
+            </div>
+
+        </div>
+
+
+        <h2>Document Information</h2>
+
+
+        <div class="security-notice">
+
+            <strong>Important</strong>
+
+            <p>
+                This is a demo website. Do not upload real Aadhaar,
+                PAN, bank statements or salary documents until a
+                secure production document system has been implemented.
+            </p>
+
+        </div>
+
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>PAN Card</label>
+
+                <input
+                    type="file"
+                    name="pan"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Identity Document</label>
+
+                <input
+                    type="file"
+                    name="identity"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Salary Slip</label>
+
+                <input
+                    type="file"
+                    name="salary"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Bank Statement</label>
+
+                <input
+                    type="file"
+                    name="bank"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="consent">
+
+            <input
+                type="checkbox"
+                id="consent"
+                required
+            >
+
+            <label for="consent">
+
+                I agree that Easy Credit Services may use the
+                information provided by me to contact me regarding
+                my loan assistance request.
+
+            </label>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn"
+        >
+            Submit Application
+        </button>
+
+
+        <div
+            id="successMessage"
+            class="success-message hidden">
+        </div>
+
+    </form>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Easy Credit Services</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Easy <span>Credit</span> Services
+    </div>
+
+    <a href="index.html"
+       class="btn btn-outline">
+        Public Website
+    </a>
+
+</header>
+
+
+<main class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <div class="badge">
+                OPERATIONS DASHBOARD
+            </div>
+
+            <h1>
+                Customer Applications
+            </h1>
+
+        </div>
+
+        <button
+            class="btn btn-outline"
+            onclick="clearDemoData()">
+            Clear Demo Data
+        </button>
+
+    </div>
+
+
+    <div class="stats">
+
+        <div class="stat-card">
+
+            <span>
+                Total Applications
+            </span>
+
+            <strong id="totalApplications">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                New
+            </span>
+
+            <strong id="newApplications">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                In Review
+            </span>
+
+            <strong id="reviewApplications">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Approved
+            </span>
+
+            <strong id="approvedApplications">
+                0
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="table-card">
+
+        <div class="table-header">
+
+            <h2>
+                Applications
+            </h2>
+
+            <input
+                id="searchApplications"
+                type="text"
+                placeholder="Search name or mobile..."
+            >
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Application ID
+                        </th>
+
+                        <th>
+                            Customer
+                        </th>
+
+                        <th>
+                            Loan Type
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Caller
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="applicationRows">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
